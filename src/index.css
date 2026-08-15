@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+:root {
+  --accent: #4f46e5;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background: #f6f7fb;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 英文内容用衬线体，和界面中文拉开层次，更像在读文献 */
+.serif {
+  font-family: 'Iowan Old Style', 'Georgia', 'Times New Roman', serif;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.22s ease-out both;
+}
+
+@keyframes flip-in {
+  from {
+    opacity: 0;
+    transform: rotateX(-8deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.flip-in {
+  animation: flip-in 0.25s ease-out both;
+}
