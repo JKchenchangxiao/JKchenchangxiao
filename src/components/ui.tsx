@@ -107,10 +107,18 @@ export function Tag({
   )
 }
 
-export function EmptyState({ title, hint }: { title: string; hint?: string }) {
+export function EmptyState({
+  title,
+  hint,
+  icon = '🎉',
+}: {
+  title: string
+  hint?: string
+  icon?: string
+}) {
   return (
     <Card className="grid place-items-center gap-2 p-12 text-center">
-      <div className="text-4xl">🎉</div>
+      <div className="text-4xl">{icon}</div>
       <div className="text-lg font-medium text-slate-800">{title}</div>
       {hint && <div className="max-w-sm text-sm text-slate-500">{hint}</div>}
     </Card>

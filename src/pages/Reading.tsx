@@ -32,11 +32,10 @@ function AnnotatedText({
         p.gloss ? (
           <span
             key={i}
-            title={p.gloss}
-            className="group relative cursor-help border-b border-dashed border-[var(--accent)] text-[var(--accent)]"
+            className="group/gloss relative cursor-help border-b border-dashed border-[var(--accent)] text-[var(--accent)]"
           >
             {p.text}
-            <span className="pointer-events-none absolute -top-8 left-1/2 z-10 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-slate-900 px-2 py-1 text-xs text-white group-hover:block">
+            <span className="pointer-events-none absolute -top-8 left-1/2 z-10 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-slate-900 px-2 py-1 text-xs text-white group-hover/gloss:block">
               {p.gloss}
             </span>
           </span>
@@ -90,11 +89,14 @@ function ReadingDetail({ reading, onBack }: { reading: Reading; onBack: () => vo
 
         <div className="serif mt-6 space-y-4 text-[17px] leading-8 text-slate-800">
           {reading.paragraphs.map((p, i) => (
-            <div key={i} className="group flex items-start gap-2">
+            <div key={i} className="group/para flex items-start gap-2">
               <p className="flex-1">
                 <AnnotatedText text={p} glossary={reading.glossary} />
               </p>
-              <SpeakButton text={p} className="mt-1 opacity-0 transition group-hover:opacity-100" />
+              <SpeakButton
+                text={p}
+                className="mt-1 opacity-0 transition group-hover/para:opacity-100"
+              />
             </div>
           ))}
         </div>

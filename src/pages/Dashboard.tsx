@@ -101,7 +101,12 @@ export default function Dashboard({ onNavigate }: { onNavigate: (r: Route) => vo
             <h2 className="font-semibold text-slate-900">最近 14 天</h2>
             <span className="text-xs text-slate-400">柱高 = 当天复习卡片数</span>
           </div>
-          <div className="flex h-32 items-end gap-1.5">
+          <div className="relative flex h-32 items-end gap-1.5">
+            {peak === 1 && days.every((d) => d.count === 0) && (
+              <span className="absolute inset-x-0 top-1/2 -translate-y-1/2 text-center text-sm text-slate-300">
+                还没有复习记录，学完第一张卡片这里就会长出柱子
+              </span>
+            )}
             {days.map((d) => (
               <div key={d.key} className="group flex flex-1 flex-col items-center gap-1">
                 <div className="relative w-full flex-1">

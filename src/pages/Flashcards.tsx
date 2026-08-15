@@ -99,10 +99,18 @@ export default function Flashcards() {
       </div>
 
       {!term || !card ? (
-        <EmptyState
-          title="这一组已经清空了"
-          hint="到期卡片都复习完了。可以换个子领域、打开收藏本，或者去做一组测验巩固一下。"
-        />
+        starredOnly && progress.starred.length === 0 ? (
+          <EmptyState
+            icon="☆"
+            title="收藏本还是空的"
+            hint="在闪卡或词库里点 ☆ 收藏那些总是记不住的词，之后就能只练这一组。"
+          />
+        ) : (
+          <EmptyState
+            title="这一组已经清空了"
+            hint="到期卡片都复习完了。可以换个子领域、打开收藏本，或者去做一组测验巩固一下。"
+          />
+        )
       ) : (
         <>
           <div className="flex items-center gap-3 text-sm text-slate-500">
