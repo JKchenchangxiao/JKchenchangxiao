@@ -30,7 +30,7 @@ Java ｜ 2021.06-2022.03
 
 ### 个人博客系统
 
-2026.01-2026.03
+2025.01-2025.03
 
 技术栈：Spring Boot · Spring Security · JPA · PostgreSQL · Redis · Elasticsearch · Vue 3 · TypeScript · Docker · Nginx  
 线上：http://43.139.188.114 ｜ 代码：github.com/JKchenchangxiao/blog（后端）· github.com/JKchenchangxiao/vue-project-blog（前端）
@@ -42,7 +42,7 @@ Java ｜ 2021.06-2022.03
 
 ### 全栈电商系统「旗舰手机精品店」
 
-2026.04-2026.07
+2025.04-2025.07
 
 技术栈：Java 21 · Spring Boot 4 · MyBatis-Plus · MySQL 8 · JWT · WebSocket · 支付宝 · Docker · Nginx ｜ Vue 3 · TypeScript · Vite · Element Plus · Pinia  
 线上：http://43.139.188.114:8888（可自行注册体验）｜ 代码：github.com/JKchenchangxiao/mall（后端）
@@ -56,7 +56,7 @@ Java ｜ 2021.06-2022.03
 
 ### 「声临其境」AI Agent 全栈音响测评平台
 
-2026.07-至今
+2025.07-至今
 
 技术栈：Java 21 · Spring Boot · Spring Data JPA · MySQL 8 · Vue 3 · TypeScript · Vite · Vue Router · Docker · Nginx ｜ AI 工具：Claude Code  
 线上：http://43.139.188.114:8890 ｜ 代码：github.com/JKchenchangxiao/audio
