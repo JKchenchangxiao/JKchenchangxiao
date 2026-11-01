@@ -22,7 +22,7 @@
 
     body {
       font-size: 10.5pt;
-      line-height: 1.55;
+      line-height: 1.5;
     }
 
     .page {
@@ -93,6 +93,9 @@
 
     .job, .project {
       margin: 0 0 8px;
+    }
+
+    .job, .project .row, .project .meta, .project .lead, .project li, .project-keep {
       break-inside: avoid;
       page-break-inside: avoid;
     }
@@ -205,13 +208,10 @@
       <h2>工作经历</h2>
       <article class="job">
         <div class="row">
-          <h3>广东轩辕网络科技股份有限公司</h3>
-          <p class="when">2021.06-2022.03</p>
+          <h3>广州麦媒信息科技有限公司</h3>
+          <p class="when">2025.11-2026.11</p>
         </div>
-        <p class="role">Java</p>
-        <ul>
-          <li>参与业务系统后端开发与国产数据库迁移工作</li>
-        </ul>
+        <p class="role">Java 工程师</p>
       </article>
       <article class="job">
         <div class="row">
@@ -222,6 +222,16 @@
         <ul>
           <li>负责对账与清算工作：日常账务核对、差错排查与调账处理，保障资金账务一致</li>
           <li>担任业务与科技条线联络人：需求收集与转译、系统问题跟进、新系统上线验证</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="row">
+          <h3>广东轩辕网络科技股份有限公司</h3>
+          <p class="when">2021.06-2022.03</p>
+        </div>
+        <p class="role">Java</p>
+        <ul>
+          <li>参与业务系统后端开发与国产数据库迁移工作</li>
         </ul>
       </article>
     </section>
@@ -260,7 +270,7 @@
         </ul>
       </article>
 
-      <article class="project">
+      <article class="project project-keep">
         <div class="row">
           <h3>「声临其境」AI Agent 全栈音响测评平台</h3>
           <p class="when">2025.07-至今</p>
