@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>陈长霄 · Java</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 12mm 13mm 12mm 13mm;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #e8eaee;
+      color: #1c1c1c;
+      font-family: "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      font-size: 10.5pt;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 16px auto;
+      padding: 12mm 13mm 11mm;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(20, 28, 40, 0.12);
+    }
+
+    header.identity {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #1e3a5f;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      line-height: 1.1;
+      color: #14233a;
+    }
+
+    .target {
+      margin: 0;
+      font-size: 11pt;
+      color: #1e3a5f;
+      white-space: nowrap;
+      letter-spacing: 0.04em;
+    }
+
+    .contact {
+      margin: 6px 0 0;
+      font-size: 10pt;
+      color: #2c3540;
+    }
+
+    h2 {
+      margin: 13px 0 6px;
+      padding-left: 8px;
+      border-left: 3px solid #1e3a5f;
+      font-size: 12pt;
+      line-height: 1.2;
+      letter-spacing: 0.08em;
+      color: #14233a;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0 0 0 1.15em;
+    }
+
+    li { margin: 1px 0; }
+
+    li::marker { color: #1e3a5f; }
+
+    p, li, dd {
+      text-wrap: pretty;
+    }
+
+    .keep { white-space: nowrap; }
+
+    .job, .project {
+      margin: 0 0 8px;
+    }
+
+    .job, .project .row, .project .meta, .project .lead, .project li, .project-keep {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 11pt;
+      font-weight: 700;
+      color: #14233a;
+    }
+
+    .when, .role {
+      margin: 0;
+      color: #243246;
+      white-space: nowrap;
+    }
+
+    .when {
+      font-variant-numeric: tabular-nums;
+      font-size: 10pt;
+    }
+
+    .role {
+      margin-top: 1px;
+      font-size: 10pt;
+    }
+
+    .note {
+      margin: 1px 0 2px;
+      color: #243246;
+    }
+
+    .meta {
+      margin: 2px 0 3px;
+      color: #243246;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+
+    .meta a {
+      color: #1a365d;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(26, 54, 93, 0.35);
+    }
+
+    .lead {
+      margin: 2px 0 3px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 5.2em 1fr;
+      gap: 2px 8px;
+      margin: 0;
+    }
+
+    .skills dt {
+      margin: 0;
+      color: #1e3a5f;
+      font-weight: 700;
+    }
+
+    .skills dd { margin: 0; }
+
+    .edu {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+    }
+
+    .edu .lead { margin: 0; }
+
+    @media print {
+      html, body { background: #fff; }
+      .page {
+        width: auto;
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="identity">
+      <div>
+        <h1>陈长霄</h1>
+        <p class="contact">13710376709 ｜ fuli82311744@gmail.com ｜ 5年工作经验</p>
+      </div>
+      <p class="target">求职意向：Java</p>
+    </header>
+
+    <section>
+      <h2>个人优势</h2>
+      <ul>
+        <li>AI 业务落地：把大模型接入企业 GEO 业务全流程，提示词约束结论出处，生成后自动校验</li>
+        <li>平台化与工程治理：抽出可复用平台模块，Flyway 管理迁移，清理废弃实现；累计发起 50+ 合并请求</li>
+        <li>多项目全栈交付：并行负责 GEO、协会网站、写作与新闻发布平台，完成 IdP 单点登录等账号体系建设</li>
+        <li>银行对账/清算业务背景+独立实现支付全链路（回调验签、双层幂等、超时关单、状态机仲裁），业务与技术互相印证，适配支付、交易、金融科技方向</li>
+        <li>具备 AI Agent 协同研发能力：能主导技术选型、架构设计与各模块实现方案，把控代码质量，并借助 AI Agent（Claude Code）高效交付并部署全栈项目，贴合 AI 原生研发趋势</li>
+        <li>三个从 0 到 1 独立开发并上线的全栈项目，覆盖高并发防超卖（200 并发压测）、支付宝支付、<span class="keep">WebSocket 推送</span>、Redis 缓存、Elasticsearch 全文搜索；线上可访问，代码开源</li>
+        <li>注重工程规范：多环境配置与密钥外置、统一响应与全局异常处理，技术选型能讲清权衡</li>
+        <li>线上演示：AI 音响测评 <a href="http://43.139.188.114:8890">43.139.188.114:8890</a> ｜ 电商 <a href="http://43.139.188.114:8888">43.139.188.114:8888</a> ｜ 博客 <a href="http://43.139.188.114">43.139.188.114</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>工作经历</h2>
+      <article class="job">
+        <div class="row">
+          <h3>广州麦媒信息科技有限公司</h3>
+          <p class="when">2025.11-2026.11</p>
+        </div>
+        <p class="role">Java 工程师</p>
+        <p class="note">受保密协议约束，不展示实际上线项目名称。</p>
+        <p class="meta">技术栈：Spring Boot 3 · MyBatis-Plus · PostgreSQL · PDFBox · Apache POI ｜ Vue 3 · React · Next.js</p>
+        <ul>
+          <li>GEO 项目：负责整体搭建与优化。按 10 个模块完成整体搭建，并优化大数据提示词生成
+            <ul>
+              <li>业务流程：建档、资料收集、AI 生成报告、客户确认、审核发布与留档；状态机控制推进，<span class="keep">保留历史版本</span></li>
+              <li>提示词与报告：结论必须标注出处，材料不足进入待确认；生成后自动检查，确认版导出 PDF / Word</li>
+              <li>平台能力：抽出文件处理模块（按页提取 PDF / Word / PPT 文字，图片和扫描件由大模型转写）与网络获取模块（网页抓取、联网搜索、海外英文资料），<span class="keep">耗时任务后台执行</span></li>
+              <li>账号与权限：邮箱验证码注册登录，按统一子系统契约接入 IdP 单点登录；<span class="keep">自助注册与实名审核门禁</span></li>
+            </ul>
+          </li>
+          <li>协会网站：负责多个协会网站全栈项目的前台与后台搭建
+            <ul>
+              <li>Next.js 构建期静态生成，标题、描述与 JSON-LD 直出 HTML，便于 AI 爬虫读取；配图接入对象存储</li>
+            </ul>
+          </li>
+          <li>写作服务平台：负责创作纪实、作家标签与运营后台用户管理的前后端开发；后台只向运营账号签发登录令牌</li>
+          <li>新闻发布平台：补齐发稿目录筛选、上传成稿确认与运营报价回显，沿用已有表结构，不新增表</li>
+          <li>大模型收费定价：负责搭建</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="row">
+          <h3>中国银行白云支行</h3>
+          <p class="when">2022.06-2024.09</p>
+        </div>
+        <p class="role">清算</p>
+        <ul>
+          <li>负责对账与清算工作：日常账务核对、差错排查与调账处理，保障资金账务一致</li>
+          <li>担任业务与科技条线联络人：需求收集与转译、系统问题跟进、新系统上线验证</li>
+        </ul>
+      </article>
+      <article class="job">
+        <div class="row">
+          <h3>广东轩辕网络科技股份有限公司</h3>
+          <p class="when">2021.06-2022.03</p>
+        </div>
+        <p class="role">Java</p>
+        <ul>
+          <li>参与业务系统后端开发与国产数据库迁移工作</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>个人项目经历</h2>
+
+      <article class="project">
+        <div class="row">
+          <h3>个人博客系统</h3>
+          <p class="when">2025.01-2025.03</p>
+        </div>
+        <p class="meta">技术栈：Spring Boot · Spring Security · JPA · PostgreSQL · Redis · Elasticsearch · Vue 3 · TypeScript · Docker · Nginx</p>
+        <p class="meta">线上：<a href="http://43.139.188.114">43.139.188.114</a> ｜ 代码：github.com/JKchenchangxiao/blog（后端）· github.com/JKchenchangxiao/vue-project-blog（前端）</p>
+        <ul>
+          <li>认证：JWT 双 Token（access 15 分钟 + refresh 7 天），前端无感续期；Redis 黑名单实现登出即时失效，<span class="keep">改密后</span>令牌立即失效</li>
+          <li>缓存：Redis Cache-Aside，空值缓存、互斥锁、TTL 随机抖动，应对<span class="keep">穿透、击穿、雪崩</span></li>
+          <li>搜索：Elasticsearch + IK 中文分词，按相关度排序，替代 LIKE 模糊查询</li>
+          <li>工程：DTO / VO / Entity 分层，统一响应与全局异常处理；图片经 COS + CDN 分发；Docker + Nginx 上线</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="row">
+          <h3>全栈电商系统「旗舰手机精品店」</h3>
+          <p class="when">2025.04-2025.07</p>
+        </div>
+        <p class="meta">技术栈：Java 21 · Spring Boot 4 · MyBatis-Plus · MySQL 8 · JWT · WebSocket · 支付宝 · Docker · Nginx ｜ Vue 3 · TypeScript · Vite · Element Plus · Pinia</p>
+        <p class="meta">线上：<a href="http://43.139.188.114:8888">43.139.188.114:8888</a>（可自行注册体验）｜ 代码：github.com/JKchenchangxiao/mall（后端）</p>
+        <p class="lead">前后端分离电商。C 端覆盖浏览、购物车、下单、支付、订单；B 端覆盖角色权限、商品、订单。独立完成<span class="keep">设计、开发</span>、压测与部署上线。</p>
+        <ul>
+          <li>防超卖：悲观锁与乐观锁（CAS）两套方案，200 并发压测均零超卖，并给出吞吐对比与选型结论</li>
+          <li>支付：接入支付宝，完成创建支付、异步回调验签、订单状态流转；支付流水唯一索引 + 订单状态 CAS 双层<span class="keep">幂等</span>；定时任务关闭超时订单并回滚库存，处理关单与迟到支付的<span class="keep">并发竞态</span></li>
+          <li>推送与权限：WebSocket 定向推送支付结果（JWT 握手鉴权、用户级会话），前端免刷新<span class="keep">更新订单</span>；<span class="keep">B 端按角色控制权限</span></li>
+          <li>部署：多环境配置分离、密钥外置，MySQL 容器化，Nginx 反向代理，腾讯云运行</li>
+        </ul>
+      </article>
+
+      <article class="project project-keep">
+        <div class="row">
+          <h3>「声临其境」AI Agent 全栈音响测评平台</h3>
+          <p class="when">2025.07-至今</p>
+        </div>
+        <p class="meta">技术栈：Java 21 · Spring Boot · Spring Data JPA · MySQL 8 · Vue 3 · TypeScript · Vite · Vue Router · Docker · Nginx ｜ AI 工具：Claude Code</p>
+        <p class="meta">线上：<a href="http://43.139.188.114:8890">43.139.188.114:8890</a> ｜ 代码：github.com/JKchenchangxiao/audio</p>
+        <p class="lead">独立主导的前后端分离音响测评平台，涵盖 8 大测评系列、100+ 产品。完成需求分析、技术选型、架构设计与<span class="keep">各模块</span>方案，借助 AI Agent（Claude Code）完成编码、联调与部署上线。</p>
+        <ul>
+          <li>架构：确定分层架构、数据模型与接口；优缺点、参数、评分等测评数据使用 MySQL JSON <span class="keep">字段存储，避免过度拆表</span></li>
+          <li>后端：Spring Boot + Spring Data JPA 构建 REST 接口；种子数据按名称去重，兼容增量与全新库；按预算、<span class="keep">房间面积</span>、用途分档推荐多声道器材，并完成评论模块</li>
+          <li>前端：Vue 3 + TypeScript + Vite 组件化开发；品牌、价格、分类筛选与实时搜索；自研中英文切换、明暗主题与可复用评论组件</li>
+          <li>部署：local / prod 双 Profile、密钥外置；Docker 化 MySQL，Nginx 托管前端静态资源并反向代理 /api，<span class="keep">一键脚本</span>上线腾讯云</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>教育经历</h2>
+      <div class="edu">
+        <p class="lead">北京师范大学珠海分校 ｜ 本科 ｜ 计算机科学与技术</p>
+        <p class="when">2018-2022</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>资格证书</h2>
+      <p class="lead">大学英语四级（CET-4）</p>
+    </section>
+
+    <section>
+      <h2>专业技能</h2>
+      <dl class="skills">
+        <dt>语言</dt>
+        <dd>Java、TypeScript、SQL</dd>
+        <dt>后端</dt>
+        <dd>Spring Boot、MyBatis-Plus、Spring Security、Spring Data JPA</dd>
+        <dt>数据</dt>
+        <dd>MySQL、PostgreSQL、Redis、Elasticsearch</dd>
+        <dt>前端</dt>
+        <dd>Vue 3（Composition API）、Pinia、Vite、Element Plus</dd>
+        <dt>运维</dt>
+        <dd>Docker、Nginx、Linux（Ubuntu）、Maven、Git</dd>
+        <dt>AI</dt>
+        <dd>Claude Code（AI Agent）、AI 辅助开发与调试、AI Agent 协同的架构设计与全栈交付</dd>
+      </dl>
+    </section>
+  </main>
+</body>
+</html>
