@@ -17,7 +17,7 @@
       padding: 0;
       background: #e8eaee;
       color: #1c1c1c;
-      font-family: "WenQuanYi Micro Hei", "Droid Sans Fallback", sans-serif;
+      font-family: "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
     }
 
     body {
@@ -218,9 +218,22 @@
         </div>
         <p class="role">Java 工程师</p>
         <p class="note">受保密协议约束，不展示实际上线项目名称。</p>
+        <p class="meta">技术栈：Spring Boot 3 · MyBatis-Plus · PostgreSQL · PDFBox · Apache POI ｜ Vue 3 · TypeScript · Next.js</p>
         <ul>
-          <li>GEO 项目：负责整体搭建与优化。按 10 个模块完成整体搭建，并优化大数据提示词生成</li>
-          <li>协会网站：负责多个协会网站全栈项目的前台与后台搭建</li>
+          <li>GEO 项目：负责整体搭建与优化。按 10 个模块完成整体搭建，并优化大数据提示词生成
+            <ul>
+              <li>业务流程：建档、资料收集、AI 生成报告、客户确认、审核发布与留档；状态机控制推进，<span class="keep">保留历史版本</span></li>
+              <li>提示词与报告：结论必须标注出处，材料不足进入待确认；生成后自动检查<span class="keep">无出处的数字与套话</span></li>
+              <li>平台能力：抽出文件处理模块（按页提取 PDF / Word / PPT 文字，图片和扫描件由大模型转写）与网络获取模块（网页抓取、联网搜索、海外英文资料），<span class="keep">耗时任务后台执行</span></li>
+              <li>账号与权限：邮箱验证码注册登录，按统一子系统契约接入 IdP 单点登录；<span class="keep">自助注册与实名审核门禁</span></li>
+              <li>工程：报告导出 PDF / Word；Flyway 管理迁移；controller / service / mapper 分层；<span class="keep">清理废弃旧实现</span></li>
+            </ul>
+          </li>
+          <li>协会网站：负责多个协会网站全栈项目的前台与后台搭建
+            <ul>
+              <li>Next.js 构建期静态生成，标题、描述与 JSON-LD 结构化数据直出 HTML，便于 AI 爬虫读取；配图接入对象存储，<span class="keep">Docker 部署</span></li>
+            </ul>
+          </li>
           <li>大模型收费定价：负责搭建</li>
         </ul>
       </article>
