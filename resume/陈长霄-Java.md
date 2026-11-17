@@ -62,6 +62,8 @@ Java ｜ 2021.06-2022.03
 
 技术栈：Spring Boot · Spring Security · Redis · Elasticsearch · Vue 3
 
+线上：http://43.139.188.114
+
 代码：github.com/JKchenchangxiao/blog
 
 - 认证与缓存：JWT 双 Token 无感续期，Redis 黑名单支持登出失效；Cache-Aside 配合空值缓存、互斥锁与 TTL 抖动
@@ -73,6 +75,8 @@ Java ｜ 2021.06-2022.03
 
 技术栈：Java 21 · Spring Boot 4 · MyBatis-Plus · MySQL 8 · Vue 3
 
+线上：http://43.139.188.114:8888（可自行注册体验）
+
 代码：github.com/JKchenchangxiao/mall
 
 - 库存与支付：悲观锁与 CAS 两套方案，200 并发压测零超卖；支付宝回调验签，支付流水唯一索引与订单状态 CAS 双层幂等
@@ -83,6 +87,8 @@ Java ｜ 2021.06-2022.03
 2025.07-至今
 
 技术栈：Spring Boot · Spring Data JPA · MySQL 8 · Vue 3
+
+线上：http://43.139.188.114:8890
 
 代码：github.com/JKchenchangxiao/audio
 
