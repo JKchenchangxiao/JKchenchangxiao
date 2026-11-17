@@ -91,6 +91,8 @@
 
     .keep { white-space: nowrap; }
 
+    .module-list { text-wrap: balance; }
+
     .job, .project {
       margin: 0 0 8px;
     }
@@ -231,10 +233,11 @@
         </div>
         <p class="role">Java 工程师</p>
         <p class="note">受保密协议约束，不展示实际上线项目名称。</p>
-        <p class="meta">技术栈：Spring Boot 3 · MyBatis-Plus · PostgreSQL · PDFBox · Apache POI ｜ Vue 3 · React · Next.js</p>
+        <p class="meta">技术栈：Spring Boot 3 · MyBatis-Plus · PostgreSQL ｜ Vue 3 · React · Next.js</p>
         <ul>
-          <li>GEO 项目：负责整体搭建与优化。按 10 个模块完成整体搭建，并优化大数据提示词生成
+          <li>GEO 项目：负责 10 个模块的整体搭建与优化，并优化大数据提示词生成
             <ul>
+              <li class="module-list">模块范围：<span class="keep">01 测试</span>、<span class="keep">02 缺口</span>、<span class="keep">03 定位</span>、<span class="keep">04 配词</span>、<span class="keep">05 证据</span>、<span class="keep">06 意图</span>、<span class="keep">07 撰写</span>、<span class="keep">08 发布</span>、<span class="keep">09 复测</span>、<span class="keep">10 资产</span></li>
               <li>业务流程：建档、资料收集、AI 生成报告、客户确认、审核发布与留档；状态机控制推进，<span class="keep">保留历史版本</span></li>
               <li>提示词与报告：结论必须标注出处，材料不足进入待确认；生成后自动检查，确认版导出 PDF / Word</li>
               <li>平台能力：抽出文件处理模块（按页提取 PDF / Word / PPT 文字，图片和扫描件由大模型转写）与网络获取模块（网页抓取、联网搜索、海外英文资料），<span class="keep">耗时任务后台执行</span></li>
